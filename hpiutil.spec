@@ -1,12 +1,12 @@
 Summary:	sys utils that conform to the SA Forum's Hardware Platform Interface specification
 Summary(pl):	Narzêdzia systemowe zgodne ze specyfikacj± Hardware Platform Interface SA Forum
 Name:		hpiutil
-Version:	1.0.5
+Version:	1.1.3
 Release:	1
 License:	BSD
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/panicsel/%{name}-%{version}.tar.gz
-# Source0-md5:	686809b4d91b4a5998f9b048cb395c75
+# Source0-md5:	bd20ec134d1251c47ffce9ffa6b6e2c1
 URL:		http://panicsel.sourceforge.net/
 BuildRequires:	openhpi-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,7 +36,8 @@ dostarczony przez sterownik Intel IPMI (/dev/imb) lub OpenIPMI
 %{__make} \
 	CC="%{__cc}" \
 	DEBFLAGS="%{rpmcflags}" \
-	LIBDIR=/usr/lib
+	LIBDIR=/usr/%{_lib} \
+	LIBHPI=openhpi
 
 %install
 rm -rf $RPM_BUILD_ROOT
