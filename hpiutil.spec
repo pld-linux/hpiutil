@@ -35,11 +35,12 @@ dostarczony przez sterownik Intel IPMI (/dev/imb) lub OpenIPMI
 %build
 %{__make} \
 	CC="%{__cc}" \
-	DEBFLAGS="%{rpmcflags}"
+	DEBFLAGS="%{rpmcflags}" \
+	LIBDIR=/usr/lib
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install $RPM_BUILD_ROOT%{_sbindir}
+install -d $RPM_BUILD_ROOT%{_sbindir}
 
 install hpialarmpanel hpisel hpifru hpisensor hpireset hpiwdt \
 	$RPM_BUILD_ROOT%{_sbindir}
@@ -51,4 +52,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog README TODO
 %attr(755,root,root) %{_sbindir}/*
-%{_mandir}/man?/*
