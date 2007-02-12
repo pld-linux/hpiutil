@@ -1,5 +1,5 @@
 Summary:	sys utils that conform to the SA Forum's Hardware Platform Interface specification
-Summary(pl):	Narzêdzia systemowe zgodne ze specyfikacj± Hardware Platform Interface SA Forum
+Summary(pl.UTF-8):   NarzÄ™dzia systemowe zgodne ze specyfikacjÄ… Hardware Platform Interface SA Forum
 Name:		hpiutil
 Version:	1.1.3
 Release:	1
@@ -20,14 +20,14 @@ an IPMI driver.  An IPMI driver can be provided by either the Intel
 IPMI driver (/dev/imb) or the OpenIPMI driver (/dev/ipmi0) in Linux
 kernel versions 2.4.20 and greater.
 
-%description -l pl
-Pakiet narzêdzi HPI dostarcza narzêdzia do zarz±dzania systemem zgodne
-ze specyfikacj± Hardware Platform Interface (interfejsu platformy
-sprzêtowej) SA Forum i jako takie s± niezale¿ne od sprzêtu dla
-platform z implementacj± biblioteki HPI. Biblioteka HPI na platformach
-intelowskich wymaga sterownika IPMI. Sterownik IPMI mo¿e byæ
+%description -l pl.UTF-8
+Pakiet narzÄ™dzi HPI dostarcza narzÄ™dzia do zarzÄ…dzania systemem zgodne
+ze specyfikacjÄ… Hardware Platform Interface (interfejsu platformy
+sprzÄ™towej) SA Forum i jako takie sÄ… niezaleÅ¼ne od sprzÄ™tu dla
+platform z implementacjÄ… biblioteki HPI. Biblioteka HPI na platformach
+intelowskich wymaga sterownika IPMI. Sterownik IPMI moÅ¼e byÄ‡
 dostarczony przez sterownik Intel IPMI (/dev/imb) lub OpenIPMI
-(/dev/ipmi0) w j±drach Linuksa w wersji 2.4.20 lub wy¿szej.
+(/dev/ipmi0) w jÄ…drach Linuksa w wersji 2.4.20 lub wyÅ¼szej.
 
 %prep
 %setup -q -c
