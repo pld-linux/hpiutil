@@ -1,5 +1,5 @@
 Summary:	sys utils that conform to the SA Forum's Hardware Platform Interface specification
-Summary(pl.UTF-8):   Narzędzia systemowe zgodne ze specyfikacją Hardware Platform Interface SA Forum
+Summary(pl.UTF-8):	Narzędzia systemowe zgodne ze specyfikacją Hardware Platform Interface SA Forum
 Name:		hpiutil
 Version:	1.1.3
 Release:	1
